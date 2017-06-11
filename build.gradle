@@ -72,3 +72,12 @@ project(':iddd_agilepm') {
         testCompile files(this.project(':iddd_common').sourceSets.test.output)
     }
 }
+
+project(':lib_ref') {
+}
+
+project(':lib_collaboration') {
+    dependencies {
+        compile project(':lib_ref')
+    }
+}
